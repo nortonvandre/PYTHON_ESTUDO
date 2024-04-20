@@ -55,5 +55,5 @@ while True:
     continuar = input("Deseja continuar? (s/n): ").upper().strip()[0]
     
     # Se o usuário não deseja continuar, sai do loop principal
-    if continuar != 's':
+    if continuar != 'S':
         break
