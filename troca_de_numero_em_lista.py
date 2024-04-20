@@ -52,8 +52,8 @@ while True:
     lista[id2] = temp
     
     # Pergunta ao usuário se deseja continuar
-    continuar = input("Deseja continuar? (s/n): ")
+    continuar = input("Deseja continuar? (s/n): ").upper().strip()[0]
     
     # Se o usuário não deseja continuar, sai do loop principal
-    if continuar.lower() != 's':
+    if continuar != 's':
         break

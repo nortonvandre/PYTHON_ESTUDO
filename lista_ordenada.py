@@ -2,7 +2,7 @@
 lista = [1, 4, 2, 7, 3]
 lista_ordenada = []
 """
-Estudo de lista ordenada feita de forma manual lidando com a lógica em posicionamento, O código é um jeito de entender como ordenar listas sem usar os métodos prontos do Python. É um exercício para aprender a lógica por trás da ordenação manual 
+Estudo de lista ordenada feita de forma manual lidando com a lógica em posicionamento, o código é um jeito de entender como ordenar listas sem usar os métodos prontos do Python. É um exercício para aprender a lógica por trás da ordenação manual 
 """
 for num in lista:  # Percorre os números dentro da lista
     # Se você quiser iniciar a lista com um 'if'
