@@ -1,4 +1,4 @@
-def search(lista, numero):
+def serach(lista, numero):
     """
     Esta função procura dois números na lista cuja soma seja igual a um número dado.
 
@@ -16,6 +16,7 @@ def search(lista, numero):
             # Verifica se a soma de n e i é igual a numero
             if lista[n] + lista[i] == numero:
                 return lista[n], lista[i]  # Retorna os números encontrados
+        
 
     # Se nenhum par for encontrado, retorna None
     return None
@@ -25,7 +26,7 @@ lista = [2, 6, 3, 9, 4]
 numero = 11
 
 # Chama a função e imprime os resultados
-resultado = search(lista, numero)
+resultado = serach(lista, numero)
 if resultado:
     print(f"Os números {resultado[0]} e {resultado[1]} têm a soma igual a {numero}.")
 else:
@@ -34,7 +35,7 @@ else:
 
 
 
-def search(lista, numero):
+def serach2(lista, numero):
     """
     Esta função procura dois números na lista cuja soma seja igual a um número dado.
 
@@ -67,7 +68,7 @@ lista = [2, 6, 3, 9, 4]
 numero = 11
 
 # Chama a função e imprime os resultados
-resultado = search(lista, numero)
+resultado = serach2(lista, numero)
 if resultado:
     print(f"Os números {resultado[0]} e {resultado[1]} têm a soma igual a {numero}.")
 else:
