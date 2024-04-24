@@ -1,22 +1,35 @@
 # Lista original e lista ordenada manualmente
 lista = [1, 4, 2, 7, 3]
 lista_ordenada = []
-"""
-Estudo de lista ordenada feita de forma manual lidando com a lógica em posicionamento, o código é um jeito de entender como ordenar listas sem usar os métodos prontos do Python. É um exercício para aprender a lógica por trás da ordenação manual 
-"""
+
 for num in lista:  # Percorre os números dentro da lista
     # Se você quiser iniciar a lista com um 'if'
     # if not lista_ordenada:
     #     lista_ordenada.append(num)
 
     for i in range(len(lista_ordenada)):  # Loop com range da lista ordenada
-        if num > lista_ordenada[i]:  # Comparativo de número(lista) com número(lista_ordenada)
+        if num < lista_ordenada[i]:  # Comparativo de número(lista) com número(lista_ordenada)
             lista_ordenada.insert(i, num)  # Insere o número no índice no momento em que ele for maior que o número na lista ordenada
             break
     else:
         lista_ordenada.append(num)  # Adiciona o primeiro número assim iniciando o loop(pode se tambem usar um if)
 
 print("Lista ordenada manualmente:", lista_ordenada)
+
+# Lista inicial
+lista = [1, 4, 2, 7, 3]
+
+# Loop para percorrer cada elemento da lista
+for i in range(len(lista)):
+    # Loop interno para comparar o elemento atual com os elementos seguintes
+    for j in range(i+1, len(lista)):
+        # Se o elemento atual for menor que o próximo elemento, trocamos os elementos
+        if lista[i] < lista[j]:
+            lista[i], lista[j] = lista[j], lista[i]
+
+# Imprime a lista ordenada em ordem decrescente
+print(lista)
+
 
 # Lista ordenada usando o método sort()
 lista2 = [4, 2, 7, 3, 9]
