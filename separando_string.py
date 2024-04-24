@@ -1,5 +1,5 @@
 # Lista de strings contendo nomes e números
-string_junta = ["norton vandre de jesuz 02716641965", "joao 0841235467"]
+string_junta = ["nortonvandredejesuz02716641965", "joao0841235467"]
 
 # Lista para armazenar os dados separados
 dados = []
